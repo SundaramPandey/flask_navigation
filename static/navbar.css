@@ -1,0 +1,139 @@
+/* Design for logo */
+.logo{
+    width:35px;
+    height: 35px;
+}
+
+/* Design for navbar */
+
+.navbar{
+    background-color: whitesmoke;
+    margin-top:0px;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Designs for the list present in the ul component */
+
+.nav-item{
+    display: flex;
+    padding: 1vw;
+}
+
+/* Hovering effect for navbar options */
+  
+.nav-link {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+  
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+/* Designing ul */
+
+.navbar-nav{
+    padding: 12px;
+    margin-left: 24px;
+}
+
+/* Right block present in the navbar */
+
+.right{
+    display: flex;
+}
+
+/* Style for the search box present at the right */
+
+.search-box {
+    float: right;
+    height: 39px;
+  }
+  
+/* for the form */
+
+.search{
+    padding-right: 20px;
+    margin-top: 7px;
+    width: 250px;
+}
+
+/* for the search box */
+
+.search-box input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+  
+  
+/* To make cursor as hand in the sign-in div */
+
+.sign-in{
+    cursor: pointer;
+}
+  
+/* Making the sign-in hover-effect */
+  
+.sign-in:hover {
+    background-color: #f0f0f0;
+    border-radius: 12px;
+}
+  
+/* Style only for the sign-in option */
+  
+.sign-in-a{
+    padding-right: 9px;
+}
+  
+/* Responsive Styles */
+@media (max-width: 600px) {
+      .search-box {
+    float: none;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Drawer will not be displayed until the media query satisfies */
+
+.drawer{
+    display: none;
+}
+
+/* Design the dash which presnt in the drawer navigator */
+
+.dash{
+    width: 24px;
+    background-color: black;
+    height: 2px;
+}
+
+/* Media query designing which will change the design when the width is less than 600px */
+
+@media (max-width:600px){
+
+    /* Making the normal navigator display as none so it would not be displayed when the windows width is less than 600 */
+
+    .navbar{
+        display:none;
+    }
+
+    /* Displaying the Drawer navigator when the max width is 600px that is width less than 600px */
+
+    .drawer{
+        display: block;
+    }
+
+    /* The logo img when the drawer navigator is displayed */
+
+    .drawer-logo{
+        width:35px;
+        height: 35px;
+    }
+}
+
